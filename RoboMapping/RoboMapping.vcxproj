@@ -1,0 +1,461 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8E58ECA2-DC8B-47A6-9A0D-05A7FB8B6076}</ProjectGuid>
+    <RootNamespace>RoboMapping</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>Dynamic</UseOfMfc>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)$(Configuration)\</OutDir>
+    <IntDir>$(Configuration)\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>D:\Eigen3;$(ProjectDir)\include;$(ProjectDir)\..\lib\Geometry\include;$(ProjectDir)\..\lib\Tools\include;$(ProjectDir)\..\lib\Laser2D\Scan\include;$(ProjectDir)\..\lib\Laser2D\Feature\include;$(ProjectDir)\..\lib\Laser2D\Matcher\include;$(ProjectDir)\..\lib\Navigation\Simulate\include;$(ProjectDir)\..\lib\Navigation\Tools\include;$(ProjectDir)\..\lib\Navigation\ScanMatcher\include;$(ProjectDir)\..\lib\Navigation\ScanMatcher\Siasun\include;$(ProjectDir)\..\lib\Navigation\ScanMatcher\Cox\include;$(ProjectDir)\..\lib\Navigation\Slam\include;$(ProjectDir)\..\lib\Tcp\include;$(ProjectDir)\..\LaserSurveyLib\include;$(ProjectDir)\Tools\include;$(ProjectDir)\Tcp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>C:\PCL 1.8.1\include\pcl-1.8;C:\PCL 1.8.1\3rdParty\Boost\include\boost-1_64;C:\eigen_3.3.7;$(ProjectDir)\..\lib\Ndt\ndt_map\include\ndt_map\impl;$(ProjectDir)\..\lib\Ndt\ndt_map\include;$(ProjectDir)\..\lib\Ndt\ndt_mcl\include;$(ProjectDir)\..\lib\Ndt\ndt_registration\include;$(ProjectDir)\..\lib\Ndt\ndt_fuser\include;$(ProjectDir)\include;$(ProjectDir)\..\lib\Geometry\include;$(ProjectDir)\..\lib\Tools\include;$(ProjectDir)\..\lib\Laser2D\Scan\include;$(ProjectDir)\..\lib\Laser2D\Feature\include;$(ProjectDir)\..\lib\Laser2D\Matcher\include;$(ProjectDir)\..\lib\Laser2D\Csm\include;$(ProjectDir)\..\lib\Laser2D\Csm\src;$(ProjectDir)\..\lib\Laser2D\Csm\src\csm;$(ProjectDir)\..\lib\Laser2D\Csm\include\csm;$(ProjectDir)\..\lib\Navigation\Simulate\include;$(ProjectDir)\..\lib\Navigation\Tools\include;$(ProjectDir)\..\lib\Navigation\Slam\include;$(ProjectDir)\..\lib\World\include;$(ProjectDir)\..\lib\Traj\include;$(ProjectDir)\Tools\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINDOWS;_DEBUG;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <OpenMPSupport>true</OpenMPSupport>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>$(ProjectDir)\..\lib\iSam\include;$(ProjectDir)\..\lib\iSam\isam;D:\Eigen3;D:\suitesparse-metis-for-vs2015\build\install\include\suitesparse;D:\suitesparse-metis-for-vs2015\build\install\include;D:\suitesparse-metis-for-vs2015\SuiteSparse\CSparse\Include;D:\suitesparse-metis-for-vs2015\SuiteSparse\CHOLMOD\Include;D:\suitesparse-metis-for-vs2015\SuiteSparse\SuiteSparse_config;$(ProjectDir)\include;$(ProjectDir)\..\lib\Geometry\include;$(ProjectDir)\..\lib\Tools\include;$(ProjectDir)\..\lib\Navigation\Scan\include;$(ProjectDir)\..\lib\Navigation\Feature\include;$(ProjectDir)\..\lib\Navigation\Simulate\include;$(ProjectDir)\..\lib\Navigation\Tools\include;$(ProjectDir)\..\lib\Navigation\ScanMatcher\Siasun\include;$(ProjectDir)\..\lib\Navigation\ScanMatcher\include;$(ProjectDir)\..\lib\Navigation\ScanMatcher\Cox\include;$(ProjectDir)\..\lib\Navigation\Slam\include;$(ProjectDir)\..\lib\Tcp\include;$(ProjectDir)\..\LaserSurveyLib\include;$(ProjectDir)\Tools\include;$(ProjectDir)\Tcp\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>D:\suitesparse-metis-for-vs2015\build\install\lib\lapack_blas_windows;D:\suitesparse-metis-for-vs2015\build\lib\Release;D:\suitesparse-metis-for-vs2015\build\install\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libamd.lib;libbtf.lib;libcamd.lib;libccolamd.lib;libcholmod.lib;libcolamd.lib;libcxsparse.lib;libklu.lib;libldl.lib;libspqr.lib;suitesparseconfig.lib;libblas.lib;liblapack.lib;metis.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <IntrinsicFunctions>false</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;WINDOWS;NDEBUG;M_PI=3.14159265;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalIncludeDirectories>C:\PCL 1.8.1\include\pcl-1.8;C:\PCL 1.8.1\3rdParty\Boost\include\boost-1_64;C:\eigen_3.3.7;$(ProjectDir)\..\lib\Ndt\ndt_map\include\ndt_map\impl;$(ProjectDir)\..\lib\Ndt\ndt_map\include;$(ProjectDir)\..\lib\Ndt\ndt_mcl\include;$(ProjectDir)\..\lib\Ndt\ndt_registration\include;$(ProjectDir)\..\lib\Ndt\ndt_fuser\include;$(ProjectDir)\include;$(ProjectDir)\..\lib\Geometry\include;$(ProjectDir)\..\lib\Tools\include;$(ProjectDir)\..\lib\Laser2D\Scan\include;$(ProjectDir)\..\lib\Laser2D\Feature\include;$(ProjectDir)\..\lib\Laser2D\Matcher\include;$(ProjectDir)\..\lib\Laser2D\Csm\include;$(ProjectDir)\..\lib\Laser2D\Csm\src;$(ProjectDir)\..\lib\Laser2D\Csm\src\csm;$(ProjectDir)\..\lib\Laser2D\Csm\include\csm;$(ProjectDir)\..\lib\Navigation\Simulate\include;$(ProjectDir)\..\lib\Navigation\Tools\include;$(ProjectDir)\..\lib\Navigation\Slam\include;$(ProjectDir)\..\lib\World\include;$(ProjectDir)\..\lib\Traj\include;$(ProjectDir)\Tools\include;$(ProjectDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OpenMPSupport>true</OpenMPSupport>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0804</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>
+      </IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ChildFrm.h" />
+    <ClInclude Include="CLinkDatasetDlg.h" />
+    <ClInclude Include="DatasetSaveOptionDlg.h" />
+    <ClInclude Include="GotoDlg.h" />
+    <ClInclude Include="LineCreateParamDlg.h" />
+    <ClInclude Include="LineFeatureDlg.h" />
+    <ClInclude Include="MainFrm.h" />
+    <ClInclude Include="OptionDlg.h" />
+    <ClInclude Include="OutputOptionDlg.h" />
+    <ClInclude Include="PointFeatureDlg.h" />
+    <ClInclude Include="ReflectorCreateParamDlg.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="RoboMapping.h" />
+    <ClInclude Include="RoboMappingDoc.h" />
+    <ClInclude Include="RoboMappingView.h" />
+    <ClInclude Include="ScannerParamDlg.h" />
+    <ClInclude Include="ScanView.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TransformDlg.h" />
+    <ClInclude Include="TranslationDlg.h" />
+    <ClInclude Include="WaitBusyDlg.h" />
+    <ClInclude Include="WorldPointDlg.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\lib\Geometry\src\AffinePosture.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Angle.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Arc.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Bezier.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Circle.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Direct.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Ellipse.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Frame.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Line.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\LineBase.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\MultiSegLine.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\NewCurve.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Pnt.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\PolyRegion.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Posture.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Range.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Rectangle.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Scp.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\ScrnRef.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Spline.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Spp.cpp" />
+    <ClCompile Include="..\lib\Geometry\src\Transfor.cpp" />
+    <ClCompile Include="..\lib\Laser2D\Csm\src\csm\CorrList.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\csm\CsmMatcher.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\csm\CsmScan.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\csm\math_utils.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\csm\math_utils_gsl.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\egsl\egsl.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\egsl\egsl_conversions.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\egsl\egsl_misc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\egsl\egsl_ops.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\gpc\gpc.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\gpc\gpc_utils.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Scan\src\PclPointCloud.cpp" />
+    <ClCompile Include="..\lib\Laser2D\Scan\src\ScannerParam.cpp" />
+    <ClCompile Include="..\lib\Laser2D\Feature\src\FeatureSet.cpp" />
+    <ClCompile Include="..\lib\Laser2D\Feature\src\FlatReflectorFeature.cpp" />
+    <ClCompile Include="..\lib\Laser2D\Feature\src\PointFeature.cpp" />
+    <ClCompile Include="..\lib\Laser2D\Feature\src\PointFeatureSet.cpp" />
+    <ClCompile Include="..\lib\Laser2D\Feature\src\ShortLineFeature.cpp" />
+    <ClCompile Include="..\lib\Laser2D\Scan\src\PostureGauss.cpp" />
+    <ClCompile Include="..\lib\Laser2D\Scan\src\Scan.cpp" />
+    <ClCompile Include="..\lib\Laser2D\Scan\src\ScanPointCloud.cpp" />
+    <ClCompile Include="..\lib\Navigation\Simulate\src\MovingObj.cpp" />
+    <ClCompile Include="..\lib\Navigation\Slam\src\SlamDataSet.cpp" />
+    <ClCompile Include="..\lib\Navigation\Slam\src\SlamStepData.cpp" />
+    <ClCompile Include="..\lib\Navigation\Tools\src\MatrixLib.cpp" />
+    <ClCompile Include="..\lib\Navigation\Tools\src\UnorderedPair.cpp" />
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\DatasetLocalization.cpp" />
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\MapFuser.cpp" />
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\MapWorkSpace.cpp" />
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\NdtLocalization.cpp" />
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\RobotLocalization.cpp" />
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\VectPose.cpp" />
+    <ClCompile Include="..\lib\Ndt\ndt_map\src\lazy_grid.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_map\src\ndt_cell.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_map\src\ndt_map.cpp" />
+    <ClCompile Include="..\lib\Ndt\ndt_mcl\src\CParticleFilter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_mcl\src\ndt_mcl.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_registration\src\ndt_matcher_d2d_2d.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\lib\Tools\src\Combination.cpp" />
+    <ClCompile Include="..\lib\Tools\src\DebugTrace.cpp" />
+    <ClCompile Include="..\lib\Tools\src\FitLine.cpp" />
+    <ClCompile Include="..\lib\Tools\src\Tools.cpp" />
+    <ClCompile Include="..\lib\Traj\src\ArcTraj.cpp" />
+    <ClCompile Include="..\lib\Traj\src\Linetraj.cpp" />
+    <ClCompile Include="..\lib\Traj\src\LzySTraj.cpp" />
+    <ClCompile Include="..\lib\Traj\src\Scptraj.cpp" />
+    <ClCompile Include="..\lib\Traj\src\Sidetraj.cpp" />
+    <ClCompile Include="..\lib\Traj\src\Spintraj.cpp" />
+    <ClCompile Include="..\lib\Traj\src\Splntraj.cpp" />
+    <ClCompile Include="..\lib\Traj\src\Spptraj.cpp" />
+    <ClCompile Include="..\lib\Traj\src\SteeTraj.cpp" />
+    <ClCompile Include="..\lib\World\src\ArcPath.cpp" />
+    <ClCompile Include="..\lib\World\src\GenericPath.cpp" />
+    <ClCompile Include="..\lib\World\src\LinePath.cpp" />
+    <ClCompile Include="..\lib\World\src\Node.cpp" />
+    <ClCompile Include="..\lib\World\src\NodeBase.cpp" />
+    <ClCompile Include="..\lib\World\src\Path.cpp" />
+    <ClCompile Include="..\lib\World\src\PathBase.cpp" />
+    <ClCompile Include="..\lib\World\src\RfId.cpp" />
+    <ClCompile Include="..\lib\World\src\ScpPath.cpp" />
+    <ClCompile Include="..\lib\World\src\SidePath.cpp" />
+    <ClCompile Include="..\lib\World\src\UnknownPath.cpp" />
+    <ClCompile Include="..\lib\World\src\Vertex.cpp" />
+    <ClCompile Include="..\lib\World\src\World.cpp" />
+    <ClCompile Include="ChildFrm.cpp" />
+    <ClCompile Include="CLinkDatasetDlg.cpp" />
+    <ClCompile Include="DatasetSaveOptionDlg.cpp" />
+    <ClCompile Include="GotoDlg.cpp" />
+    <ClCompile Include="MainFrm.cpp" />
+    <ClCompile Include="MapParamDlg.cpp" />
+    <ClCompile Include="OutputOptionDlg.cpp" />
+    <ClCompile Include="PointFeatureDlg.cpp" />
+    <ClCompile Include="ReflectorCreateParamDlg.cpp" />
+    <ClCompile Include="RoboMapping.cpp" />
+    <ClCompile Include="RoboMappingDoc.cpp" />
+    <ClCompile Include="RoboMappingView.cpp" />
+    <ClCompile Include="ScannerParamDlg.cpp" />
+    <ClCompile Include="ScanView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="time_patch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Tools\src\misc.cpp" />
+    <ClCompile Include="TransformDlg.cpp" />
+    <ClCompile Include="TranslationDlg.cpp" />
+    <ClCompile Include="WaitBusyDlg.cpp" />
+    <ClCompile Include="WorldPointDlg.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RoboMapping.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="C:\Users\Zhanglei\Downloads\aa.bmp" />
+    <Image Include="C:\Users\Zhanglei\Downloads\ab.bmp" />
+    <Image Include="C:\Users\Zhanglei\Downloads\if_Import_131864.ico" />
+    <Image Include="C:\Users\Zhanglei\Downloads\项目1.bmp" />
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\buttons.bmp" />
+    <Image Include="res\filelarge.bmp" />
+    <Image Include="res\filesmall.bmp" />
+    <Image Include="res\icon2.ico" />
+    <Image Include="res\icon3.ico" />
+    <Image Include="res\main.bmp" />
+    <Image Include="res\RoboMapping.ico" />
+    <Image Include="res\RoboMappingDoc.ico" />
+    <Image Include="res\Robot.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\writelarge.bmp" />
+    <Image Include="res\writesmall.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\cur00001.cur" />
+    <None Include="res\cur00002.cur" />
+    <None Include="res\cur00003.cur" />
+    <None Include="res\cur00004.cur" />
+    <None Include="res\cur00005.cur" />
+    <None Include="res\cur00006.cur" />
+    <None Include="res\cur00007.cur" />
+    <None Include="res\cur00008.cur" />
+    <None Include="res\cur00009.cur" />
+    <None Include="res\cur00010.cur" />
+    <None Include="res\cur00011.cur" />
+    <None Include="res\cursor1.cur" />
+    <None Include="res\cursor2.cur" />
+    <None Include="res\del1.cur" />
+    <None Include="res\del_rect.cur" />
+    <None Include="res\del_this.cur" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+    <None Include="res\RoboMapping.rc2" />
+    <None Include="res\sel_w1.cur" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="RoboMapping.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

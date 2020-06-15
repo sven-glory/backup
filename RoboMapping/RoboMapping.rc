@@ -1,0 +1,954 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+#include "verrsrc.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(简体，中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "#include ""verrsrc.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#include ""res\\RoboMapping.rc2""  // 非 Microsoft Visual C++ 编辑的资源\r\n"
+    "#include ""l.CHS\\afxres.rc""      // 标准组件\r\n"
+    "#if !defined(_AFXDLL)\r\n"
+    "#include ""l.CHS\\afxprint.rc""        // 打印/打印预览资源\r\n"
+    "#include ""l.CHS\\afxribbon.rc""        // MFC 功能区和控制条资源\r\n"
+    "#endif\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\RoboMapping.ico"
+
+IDR_RoboMappingTYPE     ICON                    "res\\RoboMappingDoc.ico"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "res\\Toolbar.bmp"
+
+IDR_MAINFRAME_256       BITMAP                  "res\\Toolbar256.bmp"
+
+IDB_MAIN                BITMAP                  "res\\main.bmp"
+
+IDB_FILELARGE           BITMAP                  "res\\filelarge.bmp"
+
+IDB_FILESMALL           BITMAP                  "res\\filesmall.bmp"
+
+IDB_WRITELARGE          BITMAP                  "res\\writelarge.bmp"
+
+IDB_WRITESMALL          BITMAP                  "res\\writesmall.bmp"
+
+IDB_BUTTONS             BITMAP                  "res\\buttons.bmp"
+
+IDB_ROBOT               BITMAP                  "res\\Robot.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+IDR_MAINFRAME_256 TOOLBAR 16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "新建(&N)\tCtrl+N",              ID_FILE_NEW
+        MENUITEM "打开(&O)...\tCtrl+O",           ID_FILE_OPEN
+        MENUITEM "保存(&S)\tCtrl+S",              ID_FILE_SAVE
+        MENUITEM "另存为(&A)...",                  ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "最近的文件",                       ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                      ID_APP_EXIT
+    END
+    POPUP "编辑(&E)"
+    BEGIN
+        MENUITEM "撤消(&U)\tCtrl+Z",              ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+    POPUP "视图(&V)"
+    BEGIN
+        MENUITEM "状态栏(&S)",                     ID_VIEW_STATUS_BAR
+        POPUP "应用程序外观(&A)"
+        BEGIN
+            MENUITEM "Windows 2000(&2)",            ID_VIEW_APPLOOK_WIN_2000
+            MENUITEM "Office XP(&X)",               ID_VIEW_APPLOOK_OFF_XP
+            MENUITEM "Windows XP(&W)",              ID_VIEW_APPLOOK_WIN_XP
+            MENUITEM "Office 2003(&3)",             ID_VIEW_APPLOOK_OFF_2003
+            MENUITEM "Visual Studio 200&5",         ID_VIEW_APPLOOK_VS_2005
+            MENUITEM "Visual Studio 200&8",         ID_VIEW_APPLOOK_VS_2008
+            POPUP "Office 2007(&7)"
+            BEGIN
+                MENUITEM "蓝色样式(&B)",                    ID_VIEW_APPLOOK_OFF_2007_BLUE
+                MENUITEM "黑色样式(&L)",                    ID_VIEW_APPLOOK_OFF_2007_BLACK
+                MENUITEM "银色样式(&S)",                    ID_VIEW_APPLOOK_OFF_2007_SILVER
+                MENUITEM "水绿色样式(&A)",                   ID_VIEW_APPLOOK_OFF_2007_AQUA
+            END
+        END
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 RoboMapping(&A)...",       ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_EDIT MENU
+BEGIN
+    POPUP "编辑"
+    BEGIN
+        MENUITEM "剪切(&T)\tCtrl+X",              ID_EDIT_CUT
+        MENUITEM "复制(&C)\tCtrl+C",              ID_EDIT_COPY
+        MENUITEM "粘贴(&P)\tCtrl+V",              ID_EDIT_PASTE
+    END
+END
+
+IDR_WINDOWS_MENU MENU
+BEGIN
+    MENUITEM "新建窗口(&N)",                    ID_WINDOW_NEW
+END
+
+IDR_HELP_MENU MENU
+BEGIN
+    MENUITEM "关于 RoboMapping(&A)...",       ID_APP_ABOUT
+END
+
+IDR_THEME_MENU MENU
+BEGIN
+    MENUITEM "Office 2007 (蓝色样式)(&B)",      ID_VIEW_APPLOOK_OFF_2007_BLUE
+    MENUITEM "Office 2007 (黑色样式)(&L)",      ID_VIEW_APPLOOK_OFF_2007_BLACK
+    MENUITEM "Office 2007 (银色样式)(&S)",      ID_VIEW_APPLOOK_OFF_2007_SILVER
+    MENUITEM "Office 2007 (水绿色样式)(&A)",     ID_VIEW_APPLOOK_OFF_2007_AQUA
+    MENUITEM "Windows 7(&D)",               ID_VIEW_APPLOOK_WINDOWS_7
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 NdtMapping"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "NdtMapping，2.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2020.6.9",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_TRANSFORM DIALOGEX 0, 0, 309, 106
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "旋转变换"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,238,23,50,14
+    PUSHBUTTON      "取消",IDCANCEL,238,48,50,14
+    LTEXT           "旋转中心点X坐标：",IDC_STATIC,23,24,75,17
+    EDITTEXT        IDC_X,111,21,98,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,111,43,98,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_THITA,111,66,98,18,ES_AUTOHSCROLL
+    LTEXT           "旋转中心点Y坐标：",IDC_STATIC,23,45,71,17
+    LTEXT           "逆时针旋转角度(度)：",IDC_STATIC,23,65,83,17
+END
+
+IDD_OPTION DIALOGEX 0, 0, 221, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选项"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,59,106,50,14
+    PUSHBUTTON      "取消",IDCANCEL,113,106,50,14
+    LTEXT           "全图长度(m):",IDC_STATIC,24,18,59,16
+    LTEXT           "全图宽度(m):",IDC_STATIC,24,39,59,16
+    EDITTEXT        IDC_MAP_RANGE_X,75,14,82,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAP_RANGE_Y,75,35,82,15,ES_AUTOHSCROLL
+    LTEXT           "栅格边长(m):",IDC_STATIC,24,60,59,16
+    EDITTEXT        IDC_CELL_RESO,75,57,82,15,ES_AUTOHSCROLL
+END
+
+IDD_GOTO_DLG DIALOGEX 0, 0, 237, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "快速执行"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,54,63,50,14
+    PUSHBUTTON      "取消",IDCANCEL,132,63,50,14
+    LTEXT           "快速执行到(步)：",IDC_NOTE,30,25,90,20
+    EDITTEXT        IDC_STEP,93,22,74,17,ES_AUTOHSCROLL
+END
+
+IDD_WAIT_BUSY DIALOGEX 0, 0, 223, 55
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOPMOST
+CAPTION "等待"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    LTEXT           "正在处理数据，请稍候...",IDC_STATIC,62,25,100,20
+END
+
+IDD_TRANSLATION DIALOGEX 0, 0, 275, 89
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "坐标系平移"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,213,23,50,14
+    PUSHBUTTON      "取消",IDCANCEL,213,44,50,14
+    LTEXT           "X方向移动量：",-1,25,24,60,17
+    EDITTEXT        IDC_X,89,21,98,18,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,88,43,98,18,ES_AUTOHSCROLL
+    LTEXT           "Y方向移动量：",-1,25,45,64,17
+END
+
+IDD_POINT_FEATURE DIALOGEX 0, 0, 213, 89
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "点特征属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,155,15,50,14
+    PUSHBUTTON      "取消",IDCANCEL,155,36,50,14
+    LTEXT           "编号：",IDC_STATIC,23,18,34,15
+    LTEXT           "X坐标：",IDC_STATIC,23,38,32,15
+    LTEXT           "Y坐标：",IDC_STATIC,23,58,33,15
+    EDITTEXT        IDC_ID,62,15,66,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_POINT_X,62,35,66,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POINT_Y,61,55,66,16,ES_AUTOHSCROLL
+END
+
+IDD_LINE_FEATURE DIALOGEX 0, 0, 253, 118
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "直线特征属性"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,60,95,50,16
+    PUSHBUTTON      "取消",IDCANCEL,148,95,50,16
+    LTEXT           "编号：",IDC_STATIC,18,18,28,15
+    LTEXT           "X1：",IDC_STATIC,18,39,28,15
+    LTEXT           "Y1：",IDC_STATIC,144,38,28,15
+    EDITTEXT        IDC_ID,46,15,66,16,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_X1,46,36,66,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y1,167,35,66,16,ES_AUTOHSCROLL
+    LTEXT           "X2：",IDC_STATIC,18,63,28,15
+    LTEXT           "Y2：",IDC_STATIC,144,62,28,15
+    EDITTEXT        IDC_X2,46,60,66,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y2,167,59,66,16,ES_AUTOHSCROLL
+END
+
+IDD_SAVE_DATASET_OPTION DIALOGEX 0, 0, 208, 136
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据集保存选择"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,45,115,50,14
+    PUSHBUTTON      "取消",IDCANCEL,113,115,50,14
+    CONTROL         "完整数据集",IDC_SAVE_ALL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,9,101,17
+    CONTROL         "部分数据集",IDC_SAVE_PARTs,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,25,101,17
+    EDITTEXT        IDC_FROM,77,64,52,16,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TO,77,84,52,16,ES_AUTOHSCROLL
+    LTEXT           "起始序号：",IDC_STATIC,24,68,44,19
+    LTEXT           "终止序号：",IDC_STATIC,24,87,52,19
+    CONTROL         "反序",IDC_REVERSE_ORDER,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,41,101,17
+END
+
+IDD_EXPORT_OPTION DIALOGEX 0, 0, 207, 90
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "输出数据选择"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,44,70,50,14
+    PUSHBUTTON      "取消",IDCANCEL,112,70,50,14
+    CONTROL         "包含反光板数据",IDC_USE_REFLECTORS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,12,101,17
+    CONTROL         "包含直线特征数据",IDC_USE_LINES,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,23,34,101,17
+END
+
+IDD_REF_CREATE_PARAM DIALOGEX 0, 0, 297, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "反光板特征提取参数"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,76,106,50,14
+    PUSHBUTTON      "取消",IDCANCEL,170,106,50,14
+    LTEXT           "反光板强度门限值：",IDC_STATIC,17,16,73,8
+    LTEXT           "反光板最大宽度(m)：",IDC_STATIC,17,34,76,8
+    LTEXT           "反光板极径数据最大变化值(m)：",IDC_STATIC,17,52,116,8
+    EDITTEXT        IDC_REF_INTENSITY_GATE,171,15,88,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REF_MAX_SIZE,171,32,88,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_REF_MAX_RADIUS_VARIANCE,171,49,88,15,ES_AUTOHSCROLL
+    LTEXT           "任意两反光板之间允许最小距离(m)：",IDC_STATIC,17,70,132,8
+    EDITTEXT        IDC_MIN_DIST_BETWEEN_REF,171,66,88,15,ES_AUTOHSCROLL
+END
+
+IDD_LINE_CREATE_PARAM DIALOGEX 0, 0, 309, 182
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "直线特征提取参数"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,86,161,50,14
+    PUSHBUTTON      "取消",IDCANCEL,174,161,50,14
+    LTEXT           "直线上两相邻点最大允许距离：",IDC_STATIC,17,16,113,8
+    LTEXT           "点到直线最大允许距离(m)：",IDC_STATIC,17,34,100,8
+    EDITTEXT        IDC_MAX_P2P_DIST,172,15,88,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX_P2L_DIST,171,31,88,15,ES_AUTOHSCROLL
+    LTEXT           "最大允许Sigma值：",IDC_STATIC,17,51,68,8
+    EDITTEXT        IDC_MAX_SIGMA,171,48,88,15,ES_AUTOHSCROLL
+    LTEXT           "直线段上最少点的数量：",IDC_STATIC,17,68,89,8
+    EDITTEXT        IDC_MIN_POINTS,171,65,88,15,ES_AUTOHSCROLL
+    LTEXT           "直线段最小长度(m)：",IDC_STATIC,17,86,76,8
+    EDITTEXT        IDC_MIN_LINE_LEN,171,83,88,15,ES_AUTOHSCROLL
+    LTEXT           "扫描线与直线段的最小夹角(度)：",IDC_STATIC,17,103,118,8
+    EDITTEXT        IDC_MIN_SCAN_ANGLE,171,100,88,15,ES_AUTOHSCROLL
+    LTEXT           "两共线直线间最大合并距离(m)：",IDC_STATIC,17,120,116,8
+    EDITTEXT        IDC_MAX_LINE_MERGE_DIST,171,117,88,15,ES_AUTOHSCROLL
+END
+
+IDD_LINK_DATASET_DLG DIALOGEX 0, 0, 331, 145
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "连接数据集"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定连接",IDOK,135,121,61,17
+    LTEXT           "指定第二数据集：",IDC_STATIC,18,19,74,15
+    EDITTEXT        IDC_DATASET_MERGED,18,34,234,18,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览..",IDC_BROWSE,261,35,49,15
+    LTEXT           "第二数据集起始姿态：",IDC_STATIC,18,67,84,15
+    LTEXT           "X:",IDC_STATIC,18,87,10,15
+    LTEXT           "Y:",IDC_STATIC,101,87,10,15
+    LTEXT           "角度:",IDC_STATIC,180,87,23,15
+    EDITTEXT        IDC_X,32,85,48,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,114,84,48,15,ES_AUTOHSCROLL
+    EDITTEXT        IDC_THITA,202,84,48,15,ES_AUTOHSCROLL
+END
+
+IDD_SCANNER_PARAM_DLG DIALOGEX 0, 0, 303, 260
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "激光器参数"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,234,40,50,14
+    PUSHBUTTON      "取消",IDCANCEL,234,69,50,14
+    LTEXT           "X坐标(米)：",IDC_STATIC,32,51,66,8
+    LTEXT           "Y坐标(米)：",IDC_STATIC,32,71,66,8
+    LTEXT           "方向角(度)：",IDC_STATIC,32,92,66,8
+    LTEXT           "起始角(度)：",IDC_STATIC,32,145,66,8
+    LTEXT           "终止角(度)：",IDC_STATIC,32,162,66,8
+    GROUPBOX        "安装姿态",IDC_STATIC,14,37,189,77
+    GROUPBOX        "可视角度范围",IDC_STATIC,14,125,189,58
+    EDITTEXT        IDC_INSTALL_X,94,51,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INSTALL_THITA,94,90,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VISIBLE_STAART_ANGLE,94,142,88,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VISIBLE_END_ANGLE,94,160,88,13,ES_AUTOHSCROLL
+    LTEXT           "选择激光器：",IDC_STATIC,19,16,50,8
+    COMBOBOX        IDC_SCANNER,93,13,88,30,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "建模时启用",IDC_USE_WHEN_CREATE_MODEL,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,30,205,105,14
+    CONTROL         "定位测试中启用",IDC_USE_WHEN_LOCALIZE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,29,225,105,14
+    GROUPBOX        "应用规则",IDC_STATIC,14,190,189,58
+    EDITTEXT        IDC_INSTALL_Y5,94,70,88,13,ES_AUTOHSCROLL
+END
+
+IDD_WORLD_POINT DIALOGEX 0, 0, 239, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择操作点位置"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,60,107,50,14
+    PUSHBUTTON      "取消",IDCANCEL,128,107,50,14
+    LTEXT           "横坐标：",IDC_STATIC,34,28,40,13
+    LTEXT           "纵坐标：",IDC_STATIC,33,56,38,13
+    EDITTEXT        IDC_X,75,25,124,19,ES_AUTOHSCROLL
+    EDITTEXT        IDC_Y,75,52,124,19,ES_AUTOHSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "TODO: <公司名>"
+            VALUE "FileDescription", "RoboMapping"
+            VALUE "FileVersion", "1.0.0.1"
+            VALUE "InternalName", "RoboMapping.exe"
+            VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
+            VALUE "OriginalFilename", "RoboMapping.exe"
+            VALUE "ProductName", "TODO: <产品名>"
+            VALUE "ProductVersion", "1.0.0.1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_TRANSFORM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 99
+    END
+
+    IDD_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 214
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_GOTO_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 230
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_WAIT_BUSY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 216
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TRANSLATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 268
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_POINT_FEATURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_LINE_FEATURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_SAVE_DATASET_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_EXPORT_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 83
+    END
+
+    IDD_REF_CREATE_PARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 290
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_LINE_CREATE_PARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 175
+    END
+
+    IDD_LINK_DATASET_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 324
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_SCANNER_PARAM_DLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 296
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 253
+    END
+
+    IDD_WORLD_POINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Ribbon
+//
+
+IDR_RIBBON              RT_RIBBON_XML           "res\\ribbon.mfcribbon-ms"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_DEL                 CURSOR                  "res\\cursor1.cur"
+
+IDC_DEL_RECT            CURSOR                  "res\\cursor2.cur"
+
+IDC_TRANSLATION         CURSOR                  "res\\cur00001.cur"
+
+IDC_REFLECTOR           CURSOR                  "res\\cur00002.cur"
+
+IDC_REFLECTOR2          CURSOR                  "res\\cur00003.cur"
+
+IDC_TRANSLATION2        CURSOR                  "res\\cur00004.cur"
+
+IDC_ROTATE1             CURSOR                  "res\\cur00005.cur"
+
+IDC_ROTATE2             CURSOR                  "res\\cur00006.cur"
+
+IDC_ROTATE3             CURSOR                  "res\\cur00007.cur"
+
+IDC_DEL_THIS            CURSOR                  "res\\cur00008.cur"
+
+IDC_REFLECTOR_MOVE      CURSOR                  "res\\cur00009.cur"
+
+IDC_DEL_W               CURSOR                  "res\\del1.cur"
+
+IDC_DEL_RECT_W          CURSOR                  "res\\del_rect.cur"
+
+IDC_DEL_THIS_W          CURSOR                  "res\\del_this.cur"
+
+IDC_SEL_W               CURSOR                  "res\\cur00010.cur"
+
+IDC_SEL_THIS_W          CURSOR                  "res\\sel_w1.cur"
+
+IDC_SEL_RECT_W          CURSOR                  "res\\cur00011.cur"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_GOTO_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_WAIT_BUSY AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TRANSLATION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_TRANSFORM AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_POINT_FEATURE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LINE_FEATURE AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SAVE_DATASET_OPTION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_EXPORT_OPTION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_REF_CREATE_PARAM AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LINE_CREATE_PARAM AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUTBOX AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_OPTION AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_LINK_DATASET_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_SCANNER_PARAM_DLG AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_WORLD_POINT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDP_OLE_INIT_FAILED     "OLE 初始化失败。  请确保 OLE 库是正确的版本。"
+    IDP_SOCKETS_INIT_FAILED "Windows 套接字初始化失败。"
+END
+
+STRINGTABLE
+BEGIN
+    IDR_MAINFRAME           "环境建模"
+    IDR_RoboMappingTYPE     "\nRoboMapping\nRoboMapping\n\n\nRoboMapping.Document\nRoboMapping.Document"
+    ID_WINDOW_MANAGER       "窗口(&W)..."
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_APP_TITLE       "RoboMapping"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_NEW             "创建新文档\n新建"
+    ID_FILE_OPEN            "打开现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "用新名称保存活动文档\n另存为"
+END
+
+STRINGTABLE
+BEGIN
+    ID_APP_ABOUT            "显示程序信息、版本号和版权信息\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE
+BEGIN
+    ID_FILE_MRU_FILE1       "打开此文档"
+    ID_FILE_MRU_FILE2       "打开此文档"
+    ID_FILE_MRU_FILE3       "打开此文档"
+    ID_FILE_MRU_FILE4       "打开此文档"
+    ID_FILE_MRU_FILE5       "打开此文档"
+    ID_FILE_MRU_FILE6       "打开此文档"
+    ID_FILE_MRU_FILE7       "打开此文档"
+    ID_FILE_MRU_FILE8       "打开此文档"
+    ID_FILE_MRU_FILE9       "打开此文档"
+    ID_FILE_MRU_FILE10      "打开此文档"
+    ID_FILE_MRU_FILE11      "打开此文档"
+    ID_FILE_MRU_FILE12      "打开此文档"
+    ID_FILE_MRU_FILE13      "打开此文档"
+    ID_FILE_MRU_FILE14      "打开此文档"
+    ID_FILE_MRU_FILE15      "打开此文档"
+    ID_FILE_MRU_FILE16      "打开此文档"
+END
+
+STRINGTABLE
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回上一个窗格\n上一窗格"
+END
+
+STRINGTABLE
+BEGIN
+    ID_WINDOW_NEW           "为活动文档打开另一个窗口\n新建窗口"
+    ID_WINDOW_ARRANGE       "在窗口底部排列图标\n排列图标"
+    ID_WINDOW_CASCADE       "以重叠方式排列窗口\n层叠窗口"
+    ID_WINDOW_TILE_HORZ     "以不重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_TILE_VERT     "以不重叠的平铺方式排列窗口\n平铺窗口"
+    ID_WINDOW_SPLIT         "将活动窗口拆分为多个窗格\n拆分"
+END
+
+STRINGTABLE
+BEGIN
+    ID_EDIT_CLEAR           "清除所选内容\n清除"
+    ID_EDIT_CLEAR_ALL       "清除全部内容\n全部清除"
+    ID_EDIT_COPY            "复制所选内容，将其放入剪贴板\n复制"
+    ID_EDIT_CUT             "剪切所选内容，将其放入剪贴板\n剪切"
+    ID_EDIT_FIND            "查找指定的文本\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一操作\n重复"
+    ID_EDIT_REPLACE         "用其他文本替换特定的文本\n替换"
+    ID_EDIT_SELECT_ALL      "选定整个文档\n全选"
+    ID_EDIT_UNDO            "撤消上一操作\n撤消"
+    ID_EDIT_REDO            "重做上次撤消的操作\n重做"
+END
+
+STRINGTABLE
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n切换工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n切换状态栏"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCSIZE          "更改窗口大小"
+    AFX_IDS_SCMOVE          "更改窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "将窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到上一个文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动窗口并提示保存文档"
+END
+
+STRINGTABLE
+BEGIN
+    AFX_IDS_SCRESTORE       "将窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务列表"
+    AFX_IDS_MDICHILD        "激活此窗口"
+END
+
+STRINGTABLE
+BEGIN
+    IDS_STATUS_PANE1        "窗格 1             "
+    IDS_STATUS_PANE2        "窗格 2            "
+    IDS_STATUS_PANE3        "窗格 3       "
+END
+
+STRINGTABLE
+BEGIN
+    IDS_EDIT_MENU           "编辑"
+END
+
+STRINGTABLE
+BEGIN
+    ID_TOGGLE_OBJ           "对选中的特征进行使能/禁止"
+    ID_TOGGLE_AREA          "对指定区域中的所有特征使能/禁止"
+    ID_UNSELECT_ALL         "禁止所有特征"
+END
+
+STRINGTABLE
+BEGIN
+    ID_SELECT_SUGGESTED     "仅使能推荐的特征"
+END
+
+#endif    // 中文(简体，中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#include "res\RoboMapping.rc2"  // 非 Microsoft Visual C++ 编辑的资源
+#include "l.CHS\afxres.rc"      // 标准组件
+#if !defined(_AFXDLL)
+#include "l.CHS\afxprint.rc"        // 打印/打印预览资源
+#include "l.CHS\afxribbon.rc"        // MFC 功能区和控制条资源
+#endif
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
