@@ -34,6 +34,7 @@
 #include "AffinePosture.h"
 
 #include <propkey.h>
+#include "Version.h"
 
 #undef max
 #undef min
@@ -128,6 +129,11 @@ BOOL CRoboMappingDoc::OnNewDocument()
 	pLocalization = new CDatasetLocalization(m_fMapReso);
 	if (pLocalization == NULL)
 		return false;
+
+	// 在标题栏上显示名字
+	CString strTitle = _T("AutoMapping-V");
+	strTitle += SW_VERSION;
+	SetTitle(strTitle);
 
 	return TRUE;
 }
@@ -288,7 +294,7 @@ void CRoboMappingDoc::OnUpdateEndBuild(CCmdUI *pCmdUI)
 
 bool CRoboMappingDoc::LoadConfigParam()
 {
-	FILE* fp = _wfopen(_T("RoboMapping.cfg"), _T("rb"));
+	FILE* fp = _wfopen(_T("AutoMapping.cfg"), _T("rb"));
 	if (fp != NULL)
 	{
 		bool bOK = FeatureCreationParam.Load(fp);
@@ -300,7 +306,7 @@ bool CRoboMappingDoc::LoadConfigParam()
 
 bool CRoboMappingDoc::SaveConfigParam()
 {
-	FILE* fp = _wfopen(_T("RoboMapping.cfg"), _T("wb"));
+	FILE* fp = _wfopen(_T("AutoMapping.cfg"), _T("wb"));
 	if (fp != NULL)
 	{
 		bool bOK = FeatureCreationParam.Save(fp);
@@ -314,7 +320,7 @@ bool CRoboMappingDoc::SaveConfigParam()
 
 bool CRoboMappingDoc::LoadMapParam()
 {
-	FILE* fp = _wfopen(_T("NdtMap.ini"), _T("rt"));
+	FILE* fp = _wfopen(_T("AutoMap.ini"), _T("rt"));
 	if (fp != NULL)
 	{
 		if (fscanf(fp, "%f %f %f", &m_fMapSizeX, &m_fMapSizeY, &m_fMapReso) != 3)
@@ -329,7 +335,7 @@ bool CRoboMappingDoc::LoadMapParam()
 
 bool CRoboMappingDoc::SaveMapParam()
 {
-	FILE* fp = _wfopen(_T("NdtMap.ini"), _T("wt"));
+	FILE* fp = _wfopen(_T("AutoMap.ini"), _T("wt"));
 	if (fp != NULL)
 	{
 		if (fprintf(fp, "%f %f %f", m_fMapSizeX, m_fMapSizeY, m_fMapReso) != 3)

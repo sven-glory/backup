@@ -1,0 +1,597 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\Geometry">
+      <UniqueIdentifier>{ed617c1d-3a10-4eb8-baec-6012eaa54fd6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Tools">
+      <UniqueIdentifier>{7665b412-50c4-4d45-859d-03ad61696dae}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Navigation">
+      <UniqueIdentifier>{09c4d91f-3fa6-4116-8f44-04c4ba65e9fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Navigation\Simulate">
+      <UniqueIdentifier>{f47c8157-86de-405c-9d6a-259b4ace3a71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Navigation\Slam">
+      <UniqueIdentifier>{8876913c-10c5-4374-b299-9b807a6db123}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Navigation\Tools">
+      <UniqueIdentifier>{0b3c6490-4cc6-4ebc-bbf6-aafc03df8b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Laser2D">
+      <UniqueIdentifier>{d3354358-8566-4f3a-b7c6-1a7928f23838}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Laser2D\Scan">
+      <UniqueIdentifier>{230a4b11-15f5-4614-9273-5cf30c60d230}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Ndt">
+      <UniqueIdentifier>{f8aa97d2-58c3-4848-8ae0-7dc91615b35c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Ndt\ndt_map">
+      <UniqueIdentifier>{004c04a7-4d44-45b3-befa-463f5dfe1723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Ndt\ndt_fuser">
+      <UniqueIdentifier>{567449ef-17c8-4099-8f4e-d22478e84e83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Ndt\ndt_registration">
+      <UniqueIdentifier>{b445e59d-e133-4e1a-b48d-e56c7ee0a896}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Ndt\ndt_mcl">
+      <UniqueIdentifier>{0828a3fc-701f-4d1e-8d78-fc805a01e551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Laser2D\Feature">
+      <UniqueIdentifier>{b85a3c0f-9fb6-4653-a99f-f1a78bac7be3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Laser2D\Csm">
+      <UniqueIdentifier>{e783c4ea-4b7e-4020-826a-3987c20fd331}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Laser2D\Csm\csm">
+      <UniqueIdentifier>{72611646-9f18-4ffe-a26c-4a7d94646c90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Laser2D\Csm\egsl">
+      <UniqueIdentifier>{d5d5208c-cbfb-4adb-9e5c-b5ac5c355a3f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Laser2D\Csm\gpc">
+      <UniqueIdentifier>{f3c83623-ea57-486d-ab0a-dd6debfdc516}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\World">
+      <UniqueIdentifier>{a6fe20d3-3e72-4bcd-836c-f0ea00b180b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\Traj">
+      <UniqueIdentifier>{d115b6fd-6d15-4dd4-a432-c45a7ff72006}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RoboMapping.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="MainFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ChildFrm.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RoboMappingDoc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="RoboMappingView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TransformDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ScanView.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="GotoDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WaitBusyDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TranslationDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="PointFeatureDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LineFeatureDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="OutputOptionDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DatasetSaveOptionDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ReflectorCreateParamDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="LineCreateParamDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="CLinkDatasetDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="ScannerParamDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="WorldPointDlg.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Version.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RoboMapping.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="MainFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ChildFrm.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RoboMappingDoc.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="RoboMappingView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Angle.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Arc.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Circle.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Direct.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Line.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\LineBase.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\MultiSegLine.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\NewCurve.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\PolyRegion.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Posture.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Range.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Rectangle.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Scp.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\ScrnRef.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Spline.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Spp.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Transfor.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="Tools\src\misc.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Tools\src\DebugTrace.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Tools\src\FitLine.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Navigation\Simulate\src\MovingObj.cpp">
+      <Filter>源文件\Navigation\Simulate</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Navigation\Tools\src\MatrixLib.cpp">
+      <Filter>源文件\Navigation\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Navigation\Tools\src\UnorderedPair.cpp">
+      <Filter>源文件\Navigation\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="TransformDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ScanView.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Navigation\Slam\src\SlamDataSet.cpp">
+      <Filter>源文件\Navigation\Slam</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Navigation\Slam\src\SlamStepData.cpp">
+      <Filter>源文件\Navigation\Slam</Filter>
+    </ClCompile>
+    <ClCompile Include="GotoDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WaitBusyDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TranslationDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="PointFeatureDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="OutputOptionDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="DatasetSaveOptionDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="ReflectorCreateParamDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Frame.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Pnt.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Scan\src\Scan.cpp">
+      <Filter>源文件\Laser2D\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Scan\src\ScanPointCloud.cpp">
+      <Filter>源文件\Laser2D\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Scan\src\PostureGauss.cpp">
+      <Filter>源文件\Laser2D\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Scan\src\ScannerParam.cpp">
+      <Filter>源文件\Laser2D\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Ellipse.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="time_patch.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_map\src\lazy_grid.cpp">
+      <Filter>源文件\Ndt\ndt_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_map\src\ndt_cell.cpp">
+      <Filter>源文件\Ndt\ndt_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_map\src\ndt_map.cpp">
+      <Filter>源文件\Ndt\ndt_map</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_registration\src\ndt_matcher_d2d_2d.cpp">
+      <Filter>源文件\Ndt\ndt_registration</Filter>
+    </ClCompile>
+    <ClCompile Include="CLinkDatasetDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\AffinePosture.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="ScannerParamDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_mcl\src\CParticleFilter.cpp">
+      <Filter>源文件\Ndt\ndt_mcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_mcl\src\ndt_mcl.cpp">
+      <Filter>源文件\Ndt\ndt_mcl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\MapFuser.cpp">
+      <Filter>源文件\Ndt\ndt_fuser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\MapWorkSpace.cpp">
+      <Filter>源文件\Ndt\ndt_fuser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\VectPose.cpp">
+      <Filter>源文件\Ndt\ndt_fuser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Feature\src\FeatureSet.cpp">
+      <Filter>源文件\Laser2D\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Feature\src\FlatReflectorFeature.cpp">
+      <Filter>源文件\Laser2D\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Feature\src\PointFeature.cpp">
+      <Filter>源文件\Laser2D\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Feature\src\PointFeatureSet.cpp">
+      <Filter>源文件\Laser2D\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Feature\src\ShortLineFeature.cpp">
+      <Filter>源文件\Laser2D\Feature</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\csm\CorrList.cpp">
+      <Filter>源文件\Laser2D\Csm\csm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\csm\CsmMatcher.cpp">
+      <Filter>源文件\Laser2D\Csm\csm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\csm\CsmScan.cpp">
+      <Filter>源文件\Laser2D\Csm\csm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\csm\math_utils.cpp">
+      <Filter>源文件\Laser2D\Csm\csm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\csm\math_utils_gsl.cpp">
+      <Filter>源文件\Laser2D\Csm\csm</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\egsl\egsl.cpp">
+      <Filter>源文件\Laser2D\Csm\egsl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\egsl\egsl_conversions.cpp">
+      <Filter>源文件\Laser2D\Csm\egsl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\egsl\egsl_misc.cpp">
+      <Filter>源文件\Laser2D\Csm\egsl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\egsl\egsl_ops.cpp">
+      <Filter>源文件\Laser2D\Csm\egsl</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\gpc\gpc.cpp">
+      <Filter>源文件\Laser2D\Csm\gpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Csm\src\gpc\gpc_utils.cpp">
+      <Filter>源文件\Laser2D\Csm\gpc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\ArcPath.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\LinePath.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\Node.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\NodeBase.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\Path.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\PathBase.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\World.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\GenericPath.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\RfId.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\ScpPath.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\SidePath.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\UnknownPath.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\World\src\Vertex.cpp">
+      <Filter>源文件\World</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Traj\src\ArcTraj.cpp">
+      <Filter>源文件\Traj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Traj\src\Linetraj.cpp">
+      <Filter>源文件\Traj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Traj\src\LzySTraj.cpp">
+      <Filter>源文件\Traj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Traj\src\Scptraj.cpp">
+      <Filter>源文件\Traj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Traj\src\Sidetraj.cpp">
+      <Filter>源文件\Traj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Traj\src\Spintraj.cpp">
+      <Filter>源文件\Traj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Traj\src\Splntraj.cpp">
+      <Filter>源文件\Traj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Traj\src\Spptraj.cpp">
+      <Filter>源文件\Traj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Traj\src\SteeTraj.cpp">
+      <Filter>源文件\Traj</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Geometry\src\Bezier.cpp">
+      <Filter>源文件\Geometry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Tools\src\Tools.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Tools\src\Combination.cpp">
+      <Filter>源文件\Tools</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\NdtLocalization.cpp">
+      <Filter>源文件\Ndt\ndt_fuser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Laser2D\Scan\src\PclPointCloud.cpp">
+      <Filter>源文件\Laser2D\Scan</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\RobotLocalization.cpp">
+      <Filter>源文件\Ndt\ndt_fuser</Filter>
+    </ClCompile>
+    <ClCompile Include="..\lib\Ndt\ndt_fuser\src\DatasetLocalization.cpp">
+      <Filter>源文件\Ndt\ndt_fuser</Filter>
+    </ClCompile>
+    <ClCompile Include="MapParamDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="WorldPointDlg.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="RoboMapping.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\buttons.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\filelarge.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\filesmall.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\main.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\writelarge.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\writesmall.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\RoboMappingDoc.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\RoboMapping.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Toolbar256.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\Zhanglei\Downloads\if_Import_131864.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\bitmap1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon2.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\icon3.ico">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\Zhanglei\Downloads\aa.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\Zhanglei\Downloads\ab.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="C:\Users\Zhanglei\Downloads\项目1.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="res\Robot.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\ribbon.mfcribbon-ms">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\RoboMapping.rc2">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cursor1.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cursor2.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cur00001.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cur00002.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cur00003.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cur00004.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cur00005.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cur00006.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cur00007.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cur00008.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cur00009.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\del1.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\del_rect.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\del_this.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cur00010.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\sel_w1.cur">
+      <Filter>资源文件</Filter>
+    </None>
+    <None Include="res\cur00011.cur">
+      <Filter>资源文件</Filter>
+    </None>
+  </ItemGroup>
+</Project>

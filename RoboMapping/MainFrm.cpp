@@ -40,7 +40,7 @@ END_MESSAGE_MAP()
 CMainFrame::CMainFrame()
 {
 	// TODO: 在此添加成员初始化代码
-	theApp.m_nAppLook = theApp.GetInt(_T("ApplicationLook"), ID_VIEW_APPLOOK_OFF_2007_BLUE);
+	theApp.m_nAppLook = theApp.GetInt(_T("ApplicationLook"), ID_VIEW_APPLOOK_OFF_2007_SILVER/*ID_VIEW_APPLOOK_OFF_2007_BLUE*/);
 }
 
 CMainFrame::~CMainFrame()

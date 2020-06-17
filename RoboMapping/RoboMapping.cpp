@@ -23,6 +23,8 @@
 #include "RoboMappingView.h"
 #include "ScanView.h"
 #include "Range.h"
+#include <stdio.h>
+#include "Version.h"
 
 #ifdef _DEBUG
 #define new DEBUG_NEW
@@ -214,15 +216,28 @@ protected:
 // й╣ож
 protected:
 	DECLARE_MESSAGE_MAP()
+public:
+	CString m_strSWVersion;
+	CString m_strRelDate;
+	CString m_strRelTime;
 };
 
 CAboutDlg::CAboutDlg() : CDialogEx(IDD_ABOUTBOX)
+, m_strSWVersion(_T(""))
+, m_strRelDate(_T(""))
+, m_strRelTime(_T(""))
 {
+	m_strSWVersion = SW_VERSION;
+	m_strRelDate = _T(__DATE__);
+	m_strRelTime = _T(__TIME__);
 }
 
 void CAboutDlg::DoDataExchange(CDataExchange* pDX)
 {
 	CDialogEx::DoDataExchange(pDX);
+	DDX_Text(pDX, IDC_EDIT_VERSION, m_strSWVersion);
+	DDX_Text(pDX, IDC_EDIT_REL_DATE, m_strRelDate);
+	DDX_Text(pDX, IDC_EDIT_REL_TIME, m_strRelTime);
 }
 
 BEGIN_MESSAGE_MAP(CAboutDlg, CDialogEx)

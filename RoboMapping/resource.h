@@ -130,7 +130,11 @@
 #define IDC_USE_WHEN_LOCALIZE           1036
 #define IDC_EDIT1                       1037
 #define IDC_INSTALL_Y1                  1037
+#define IDC_EDIT_REL_TIME               1037
 #define IDC_EDIT3                       1038
+#define IDC_EDIT_REL_DATE               1038
+#define IDC_EDIT7                       1039
+#define IDC_EDIT_VERSION                1039
 #define IDC_EDIT6                       1040
 #define IDC_INSTALL_Y5                  1040
 #define ID_WRITE_PASTEASHYPERLINK       32770

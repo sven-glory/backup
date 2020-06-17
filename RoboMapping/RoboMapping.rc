@@ -245,15 +245,21 @@ END
 // Dialog
 //
 
-IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+IDD_ABOUTBOX DIALOGEX 0, 0, 223, 121
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "关于 NdtMapping"
+CAPTION "关于 AutoMapping"
 FONT 9, "MS Shell Dlg", 0, 0, 0x1
 BEGIN
-    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
-    LTEXT           "NdtMapping，2.0 版",IDC_STATIC,42,14,114,8,SS_NOPREFIX
-    LTEXT           "Copyright (C) 2020.6.9",IDC_STATIC,42,26,114,8
-    DEFPUSHBUTTON   "确定",IDOK,113,41,50,14,WS_GROUP
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,9,16,14
+    LTEXT           "AutoMapping Information:",IDC_STATIC,42,9,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C)  SIASUN",IDC_STATIC,42,85,114,8
+    DEFPUSHBUTTON   "确定",IDOK,163,102,50,14,WS_GROUP
+    LTEXT           "发布日期:",IDC_STATIC,42,47,52,8
+    LTEXT           "发布时间:",IDC_STATIC,42,66,52,8
+    EDITTEXT        IDC_EDIT_REL_TIME,97,64,104,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_REL_DATE,97,44,104,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT_VERSION,97,24,104,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "版本号:",IDC_STATIC,42,28,52,8
 END
 
 IDD_TRANSFORM DIALOGEX 0, 0, 309, 106
@@ -498,14 +504,14 @@ VS_VERSION_INFO VERSIONINFO
 BEGIN
     BLOCK "StringFileInfo"
     BEGIN
-        BLOCK "080404B0"
+        BLOCK "080404b0"
         BEGIN
-            VALUE "CompanyName", "TODO: <公司名>"
-            VALUE "FileDescription", "RoboMapping"
+            VALUE "CompanyName", "SIASUN"
+            VALUE "FileDescription", "AutoMapping"
             VALUE "FileVersion", "1.0.0.1"
-            VALUE "InternalName", "RoboMapping.exe"
+            VALUE "InternalName", "AutoMapping.exe"
             VALUE "LegalCopyright", "TODO:  (C) <公司名>。  保留所有权利。"
-            VALUE "OriginalFilename", "RoboMapping.exe"
+            VALUE "OriginalFilename", "AutoMapping.exe"
             VALUE "ProductName", "TODO: <产品名>"
             VALUE "ProductVersion", "1.0.0.1"
         END
@@ -527,10 +533,8 @@ GUIDELINES DESIGNINFO
 BEGIN
     IDD_ABOUTBOX, DIALOG
     BEGIN
-        LEFTMARGIN, 7
-        RIGHTMARGIN, 163
-        TOPMARGIN, 7
-        BOTTOMMARGIN, 55
+        RIGHTMARGIN, 220
+        BOTTOMMARGIN, 111
     END
 
     IDD_TRANSFORM, DIALOG
